@@ -10,3 +10,13 @@
 - [ES Module Talk by KCD](https://www.youtube.com/watch?v=kTlcu16rSLc&list=PLV5CVI1eNcJgNqzNwcs4UKrlJdhfDjshf)
 
 - [ES6 & Beyond Workshop by KCD](https://www.youtube.com/playlist?list=PLV5CVI1eNcJgUA2ziIML3-7sMbS7utie5)
+
+
+## Lesson Notes
+
+### Lesson 01 - Basic JavaScript-rendered Hello World
+
+- You can directly access the `body` element via `document.body`
+- You can set a `className` via `element.className`
+- You can also an `id` attribute via `element.id` 🤯
+
