@@ -30,7 +30,7 @@
 
 ```javascript
     const reactElement = React.createElement('div', {
-      className: 'container',
+className: 'container',
       children: [
         React.createElement('span', {children: 'Hello', key: 'hello'}),
         React.createElement('span', {children: ' World', key: 'world'}),
@@ -39,3 +39,8 @@
 ```
 
 - React raw API `React.createElement(component, props, ...children)`
+
+### Lesson 03 - Using JSX
+
+- You can transpile babel code into plain javascript in the browser via `<script type="text/babel">[BABEL JS]</script>` designation
+  - Transpiled code ends up in `<head>` element
