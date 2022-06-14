@@ -29,7 +29,7 @@
 -Sibling react elements are created by passing an array of React elments to the parent element `children` prop
 
 ```javascript
-    const reactElement = React.createElement('div', {
+    const reactElement = React.createElement('div',{
 className: 'container',
       children: [
         React.createElement('span', {children: 'Hello', key: 'hello'}),
@@ -44,3 +44,7 @@ className: 'container',
 
 - You can transpile babel code into plain javascript in the browser via `<script type="text/babel">[BABEL JS]</script>` designation
   - Transpiled code ends up in `<head>` element
+
+### Lesson 04 - Creating custom components
+
+-
