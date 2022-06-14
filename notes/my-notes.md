@@ -2,9 +2,9 @@
 
 ## PreReq Reading
 
-- [x] [JavaScript to Know for React](https://kentcdodds.com/blog/javascript-to-know-for-react)
+- [ ] [JavaScript to Know for React](https://kentcdodds.com/blog/javascript-to-know-for-react)
 
-- [x] ![Multiple destructuring of same property - cool](,/../Screen%20Shot%202022-06-10%20at%2015.43.27.png)
+- [ ] ![Multiple destructuring of same property - cool](,/../Screen%20Shot%202022-06-10%20at%2015.43.27.png)
 
 ## Extra References That Ain't Noone Got Time For
 
