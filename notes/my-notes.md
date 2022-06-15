@@ -47,4 +47,7 @@ className: 'container',
 
 ### Lesson 04 - Creating custom components
 
--
+- You can access `window.PropTypes` to validate props (`PropTypes available globally`)
+- `Component.propTypes` is an object of propNames and a validator functions
+
+### Lesson 05 - Styling
