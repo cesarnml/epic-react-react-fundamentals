@@ -56,3 +56,9 @@ className: 'container',
 
 ### Lesson 06 - Forms
 
+- React creates a `SyntheticEvent` object for each event. To access the native event object, you can use `event.nativeEvent`
+- `console.dir` will return the DOM node instead of the HTMLElement
+
+### Lesson 07 - Rendering Lists
+
+- Always use a key prop when rendering a list of React elements
