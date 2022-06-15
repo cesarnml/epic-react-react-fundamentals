@@ -19,6 +19,51 @@ function UsernameForm({onSubmitUsername}) {
 
   // 🐨 make sure to associate the label to the input.
   // to do so, set the value of 'htmlFor' prop of the label to the id of input
+  //   const handleSubmit = e => {
+  //     e.preventDefault()
+  //     onSubmitUsername(e.target.elements.username.value)
+  //   }
+
+  //   return (
+  //     <form onSubmit={handleSubmit}>
+  //       <div>
+  //         <label htmlFor="username">Username:</label>
+  //         <input type="text" id="username" />
+  //       </div>
+  //       <button type="submit">Submit</button>
+  //     </form>
+  //   )
+  // }
+
+  // EXTRA CREDIT #1 💯
+  //   const inputRef = React.useRef(null)
+
+  //   const handleSubmit = e => {
+  //     e.preventDefault()
+  //     onSubmitUsername(inputRef.current.value)
+  //   }
+
+  //   return (
+  //     <form onSubmit={handleSubmit}>
+  //       <div>
+  //         <label htmlFor="username">Username:</label>
+  //         <input type="text" id="username" ref={inputRef} />
+  //       </div>
+  //       <button type="submit">Submit</button>
+  //     </form>
+  //   )
+  // }
+
+  // EXTRA CREDIT #2 💯
+  const [error, setError] = React.useState(null)
+
+  const handleChange = e => {
+    if (e.target.value.toLowerCase() !== e.target.value) {
+      setError('Username must be lowercase')
+    } else {
+      setError(null)
+    }
+  }
   const handleSubmit = e => {
     e.preventDefault()
     onSubmitUsername(e.target.elements.username.value)
@@ -28,9 +73,16 @@ function UsernameForm({onSubmitUsername}) {
     <form onSubmit={handleSubmit}>
       <div>
         <label htmlFor="username">Username:</label>
-        <input type="text" id="username" />
+        <input type="text" id="username" onChange={handleChange} />
       </div>
-      <button type="submit">Submit</button>
+      {error && (
+        <div role="alert" style={{color: 'red'}}>
+          {error}
+        </div>
+      )}
+      <button type="submit" disabled={error}>
+        Submit
+      </button>
     </form>
   )
 }
