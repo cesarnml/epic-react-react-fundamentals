@@ -51,3 +51,8 @@ className: 'container',
 - `Component.propTypes` is an object of propNames and a validator functions
 
 ### Lesson 05 - Styling
+
+- KCD prefers `otherProps` naming convention
+
+### Lesson 06 - Forms
+
